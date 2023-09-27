@@ -1,0 +1,10 @@
+.connect-button {
+    background-color: #f9a826;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 0 40px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}

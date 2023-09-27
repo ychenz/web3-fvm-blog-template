@@ -1,16 +1,36 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { MoralisProvider } from "react-moralis";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { ConfigProvider } from "antd";
+import { QueryClient, QueryClientProvider } from "react-query";
+import { ReactQueryDevtools } from "react-query/devtools";
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
+const queryClient = new QueryClient({
+    defaultOptions: { queries: { staleTime: 10000 } },
+});
+
+const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <React.StrictMode>
+        <QueryClientProvider client={queryClient}>
+            <MoralisProvider initializeOnMount={false}>
+                <ConfigProvider
+                    theme={{
+                        token: {
+                            colorPrimary: "#00b96b",
+                            colorBgContainer: "#ffffff",
+                        },
+                    }}
+                >
+                    <App />
+                </ConfigProvider>
+            </MoralisProvider>
+            <ReactQueryDevtools initialIsOpen={false} />
+        </QueryClientProvider>
+    </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

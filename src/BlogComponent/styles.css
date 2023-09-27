@@ -1,0 +1,11 @@
+.Blog-container {
+    border-top: 1px solid #e6e6e6;
+    padding: 0 16px 16px 8px;
+}
+
+.Blog-paid_url_container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
