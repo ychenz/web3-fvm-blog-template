@@ -13,7 +13,9 @@ export const getEncryptedLighthouseURL = (fileCid: string) => {
 export const getSiteCid = (url: string) => {
     // Split the URL by "/" and get the second last element
     if (url === "http://localhost:3002/") {
-        return "QmcHUSx8285V4ZXwXX75SN5CqhaDkdFaP7RbkU4A4tqjeZ";
+        // TODO: Replace this with your own test site CID
+        // return "QmcHUSx8285V4ZXwXX75SN5CqhaDkdFaP7RbkU4A4tqjeZ";
+        return "QmUYCcRxGbXauKpN8hZCkByMGsGX1wW8YTVE7yjfhsTogR";
     } else {
         const siteCid = url.split("/")[url.split("/").length - 2];
 
