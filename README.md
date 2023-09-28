@@ -4,7 +4,7 @@
 
 ![image](https://github.com/ychenz/web3-fvm-blog-template/assets/10768904/7b2ba761-6aeb-413a-aba6-46bb1bfa8f1d)
 
-This project work closely with the other 3 components shown in the above architecture, this smart contract is required by all other 3 components.
+This project work closely with the other 3 components shown in the above architecture:
 
 - [Web3 blog creator](https://github.com/ychenz/web3-blog-creator)
 - [Web3 blog creator API](https://github.com/ychenz/web3-blog-creator-api)
