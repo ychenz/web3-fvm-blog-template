@@ -22,7 +22,7 @@ For the project to work you will need to set them up in the following order:
 1. Install dependencies by running `yarn`
 2. To develop this locally, you will need to build a production release by runnning `yarn build`, and copy the `build` folder.
 3. Setup the [Web3 blog creator API](https://github.com/ychenz/web3-blog-creator-api), by following the API's README, you should have pasted the `build` folder to the API's root and rename it to `blog_template`.
-4. Setup the [Web3 blog creator API](https://github.com/ychenz/web3-blog-creator-api), and create a new blog site. Once the site is created successfully, your should be able to get a CID from the Lighthouse url.
+4. Setup the [Web3 blog creator](https://github.com/ychenz/web3-blog-creator), and create a new blog site. Once the site is created successfully, your should be able to get a CID from the Lighthouse url.
 5. Open [helpers.ts file](https://github.com/ychenz/web3-fvm-blog-template/blob/main/src/helpers.ts) and paste the CID inside the `getSiteCid` function, it should look like this:
 ```
 export const getSiteCid = (url: string) => {
